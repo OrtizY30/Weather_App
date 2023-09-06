@@ -11,7 +11,7 @@ body {
     height: 100vh;
     background-image: linear-gradient(36deg,
             #18181834 100%,
-            hsla(0, 0%, 9%, 0.811) 100%), url(/img/fondo.jpg);
+            hsla(0, 0%, 9%, 0.811) 100%), url(img/fondo.jpg);
     /* background-image: url(/img/fondo.jpg); */
     background-size: cover;
     background-attachment: fixed;
