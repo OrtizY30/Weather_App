@@ -1,0 +1,234 @@
+/* Estilos generales */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* transition: all 600ms; */
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(36deg,
+            #18181834 100%,
+            hsla(0, 0%, 9%, 0.811) 100%), url(/img/fondo.jpg);
+    /* background-image: url(/img/fondo.jpg); */
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    /* overflow: hidden; */
+}
+
+
+
+header nav {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    /* font-size: 30px; */
+    color: white;
+    padding: 10px 25px;
+    text-transform: capitalize;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header nav #date {
+    margin-right: 30px;
+    color: rgba(255, 0, 0, 0.52);
+}
+
+#contenedor_principal {
+    margin-top: 5pc;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+
+.display {
+    width: 100%;
+    color: white;
+
+   
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+
+
+}
+
+#buscar{
+    display: flex;
+    align-items: center;
+    /* gap: 3px; */
+    /* margin-left: 10px; */
+}
+
+#lupa{
+    color: #ffffff;
+    position: absolute;
+    right: 2pc;
+    border: none;
+    background: transparent;
+
+}
+
+#lupa i{
+    font-size: 20px;
+}
+
+#city {
+    color: white;
+    font-size: 15px;
+    background: transparent;
+    border: 1px solid white;
+    /* border-bottom: 1px solid black; */
+    box-shadow: inset 0px 0px 10px black;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#box_city{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 20px;
+    /* flex-direction: column-reverse; */
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+
+}
+
+#text {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.local {
+    position: relative;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    height: 300px;
+    /* width: 240px; */
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+
+    box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.511);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.local:hover .coord{
+    opacity: 1;
+}
+.box:hover .coord{
+    opacity: 1;
+}
+.location {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.coord{
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 50px;
+    background-color: antiquewhite;
+
+    position: absolute;
+    top: 41px;
+    left: -10px;
+    opacity: 0;
+    /* display: none; */
+    transition: all 300ms ease-in;
+
+}
+.location:hover .coord{
+   opacity: 0;
+}
+
+.border {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+.border p {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.local h3 {
+    display: block;
+    /* box-shadow: 0px 0px 5px inset gray; */
+    /* font-size: 20px; */
+    text-transform: capitalize;
+}
+
+/* Estilos del contenedor secundario */
+#contenedor_secundario {
+    position: absolute;
+    z-index: 1;
+    top: 5pc;
+    right: 1pc;
+}
+
+#exit {
+    position: absolute;
+    right: 1pc;
+    font-weight: bold;
+    cursor: pointer;
+    top: 1pc;
+}
+
+.box {
+    text-transform: capitalize;
+    color: black;
+    padding: 10px;
+    height: 300px;
+    width: 250px;
+    background: rgb(89, 166, 225);
+    border-radius: 5px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.237);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#p_error{
+    background-color: rgba(245, 222, 179, 0.464);
+    padding: 10px;
+    font-size: 15px;
+   color: rgb(0, 0, 0);  
+   /* margin-left: 20px; */
+   position: absolute;
+   right: 2pc;
+   top: -1pc;
+   width: 170px;
+   border-radius: 5px;
+
+}

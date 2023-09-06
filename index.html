@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/media.css">
+    <title>Clima</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <h2 id="date"></h2>
+            </div>
+
+            <h1>Weather application in real time</h1>
+            <form action="" method="post" id="buscar">
+
+                <input type="text" name="city" id="city" placeholder="Search city...">
+
+                <button id="lupa"><i class='bx bx-search'></i></button>
+
+                
+            </form>
+        </nav>
+    </header>
+    <div id="contenedor_principal">
+        <div id="contenedor_secundario">
+
+        </div>
+
+        <div class="display">
+
+            <div>
+
+                <div id="text">
+                    <h3>Climate of some Colombian cities</h3>
+                </div>
+                <div id="box_city">
+
+                    <!-- <div class="local">
+                    <div class="border">
+                        <h3><span>${data.main.temp}°</span>${ciudad} - ${data.sys.country}</h3>
+                    </div>
+
+                    <div class="border">
+                        <p><span><img src="/img/icons8-viento-50.png" alt="" width="15px">    Viento</span>${data.wind.speed}</p>
+                    </div>
+                    
+                    <div class="border">
+                        <p><span> Humedad</span>${data.main.humidity}%</p>
+                    </div>
+
+                    <div class="border">
+                        <p><span>Presión</span>↑${data.main.pressure}mb</p>
+                    </div>
+                </div> -->
+               
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="/index.js"></script>
+</body>
+
+</html>

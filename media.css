@@ -1,0 +1,33 @@
+@media screen and (max-width: 982px){
+    #box_city{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    header{
+
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 893px){
+    header nav h1{
+        display: none;
+    }
+}
+@media screen and (max-width: 982px){
+    #box_city{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 480px){
+    #box_city{
+        grid-template-columns: 1fr;
+    }
+    .local h3{
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width: 480px){
+
+}
